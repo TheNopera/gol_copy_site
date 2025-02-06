@@ -2,7 +2,7 @@ import React from 'react'
 
 const HomeNavbar = () => {
   return (
-        <nav className=' w-[856px] h-[48px] bg-gray-100 px-[24px] rounded-full mt-[40px] flex items-center'>
+        <nav className=' w-[856px] h-[48px] bg-gray-100 px-[24px] rounded-full flex items-center'>
                 <ul className='flex flex-row gap-10 items-center'>
                   <li><a href="/"><img src="/logo-gol.svg" alt="" /></a></li>
                   <li><a href="Check-in">Check-in</a></li>
