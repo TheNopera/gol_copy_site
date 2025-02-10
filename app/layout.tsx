@@ -28,7 +28,6 @@ function RootLayout() {
                     <FontAwesomeIcon icon={faBell} />
                 </div>
             </header>
-            <ServicesNavbarCard></ServicesNavbarCard>
           </div>
         </body>
       </html>

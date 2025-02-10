@@ -2,7 +2,7 @@ import React from 'react'
 
 const ServicesNavbarCard = () => {
   return (
-    <div className="container w-full h-[336px] bg-gray-100 rounded-[2vw] mt-8 p-[24px]">
+    <div className="container w-[1360px] h-[336px] bg-gray-100 rounded-[2vw] mt-8 p-[24px]">
 
         <div className="submenu-voegol-title pb-[24px]">
             Serviços GOL para você

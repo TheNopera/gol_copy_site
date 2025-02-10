@@ -1,34 +1,59 @@
 "use client";
-import React from 'react'
-
+import React, { useState } from "react";
+import ServicesNavbarCard from "../app/_components/services-navbar-card";
 
 const HomeNavbar = () => {
-  return (
-    <nav className='w-[856px] h-[48px] bg-gray-100 px-[24px] rounded-full flex items-center'>
-      <ul className='flex flex-row gap-10 items-center'>
-        <li>
-          <a href="/"><img src="/logo-gol.svg" alt="" /></a>
-        </li>
-        {[
-          { name: "Check-in", href: "Check-in" },
-          { name: "Minhas Viagens", href: "MyTravels" },
-          { name: "Serviços", href: "Services" },
-          { name: "Informações", href: "Informations" },
-          { name: "Atendimento", href: "Support" },
-          { name: "Negócios", href: "Business" }
-        ].map((item, index) => (
-          <div key={index} className="relative group">
-            <li className="cursor-pointer">
-              <a href={item.href} className="relative">
-                {item.name}
-                <span className="absolute left-0 bottom-[-4px] w-full h-[3px] bg-orange-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-              </a>
-            </li>
-          </div>
-        ))}
-      </ul>
-    </nav>
-  )
-}
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
 
-export default HomeNavbar
+  return (
+    <div className="relative flex flex-col items-center">
+      {/* Navbar */}
+      <nav className="w-[856px] h-[48px] bg-gray-100 px-[24px] rounded-full flex items-center relative z-50">
+        <ul className="flex flex-row gap-10 items-center">
+          <li className="relative hover:border-b-2 hover:border-orange-500">
+            <a href="/">
+              <img src="/logo-gol.svg" alt="Logo" />
+            </a>
+          </li>
+          <li className="relative hover:border-b-2 hover:border-orange-500">
+            <a href="/check-in">Check-in</a>
+          </li>
+          <li className="relative hover:border-b-2 hover:border-orange-500">
+            <a href="/my-travels">Minhas Viagens</a>
+          </li>
+          <li
+            className={`relative hover:border-b-2 hover:border-orange-500 ${
+              isServicesOpen ? "border-b-2 border-orange-500" : ""
+            }`}
+            onMouseEnter={() => setIsServicesOpen(true)}
+            onMouseLeave={() => setIsServicesOpen(false)}
+          >
+            <a href="/services">Serviços</a>
+          </li>
+          <li className="relative hover:border-b-2 hover:border-orange-500">
+            <a href="/informations">Informações</a>
+          </li>
+          <li className="relative hover:border-b-2 hover:border-orange-500">
+            <a href="/support">Atendimento</a>
+          </li>
+          <li className="relative hover:border-b-2 hover:border-orange-500">
+            <a href="/business">Negócios</a>
+          </li>
+        </ul>
+      </nav>
+
+      {/* MARK: SERVICES SUBMENU*/}
+      <div
+        onMouseEnter={() => setIsServicesOpen(true)}
+        onMouseLeave={() => setIsServicesOpen(false)}
+        className={`absolute top-[70%] left-0 mx-auto max-w-7xl transition-all duration-300 ${
+          isServicesOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
+        }`}
+      >
+        <ServicesNavbarCard />
+      </div>
+    </div>
+  );
+};
+
+export default HomeNavbar;
