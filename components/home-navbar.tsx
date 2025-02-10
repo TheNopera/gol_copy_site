@@ -3,11 +3,13 @@ import React, { useState } from "react";
 import ServicesNavbarCard from "../app/_components/services-navbar-card";
 import InfoSubmenu from "@/app/_components/info-submenu";
 import SupportSubmenu from "@/app/_components/support-submenu";
+import BusinessSubmenu from "@/app/_components/business-submenu";
 
 const HomeNavbar = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isInfoOpen, setIsInfoOpen] = useState(false);
   const [isSupportOpen, setIsSupportOpen] = useState(false);
+  const [isBusinessOpen, setIsBusinessOpen] = useState(false);
   return (
     <div className="relative flex flex-col items-center">
       {/* Navbar */}
@@ -49,7 +51,9 @@ const HomeNavbar = () => {
             <a href="/support">Atendimento</a>
           </li>
 
-          <li className="relative hover:border-b-2 hover:border-orange-500">
+          <li className={`relative hover:border-b-2 hover:border-orange-500 ${isBusinessOpen ? "border-b-2 border-orange-500" : ""}`}
+          onMouseEnter={() => setIsBusinessOpen(true)}
+          onMouseLeave={() => setIsBusinessOpen(false)}>
             <a href="/business">Negócios</a>
           </li>
         </ul>
@@ -84,6 +88,16 @@ const HomeNavbar = () => {
             isSupportOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
             }`}>
             <SupportSubmenu/>
+        </div>
+
+        {/* MARK: BUSINESS SUBMENU*/}
+        <div
+            onMouseEnter={() => setIsBusinessOpen(true)}
+            onMouseLeave={() => setIsBusinessOpen(false)}
+            className={`absolute top-[70%] left-0 mx-auto max-w-7xl transition-all duration-300 ${
+            isBusinessOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
+            }`}>
+            <BusinessSubmenu/>
         </div>
     </div>
   );

@@ -10,7 +10,7 @@ const InfoSubmenu = () => {
         <div className="grid grid-cols-[184px_225px_225px_225px_225px] gap-3">
 
             {/*MARK: COLUNA 1*/}
-            <div className="col-span-[184px]">
+            <div className="col-span-1">
                 <div className="submenu-voegol-card bg-white rounded-[1vw] h-[240px] p-[20px] flex flex-col justify-between cursor-pointer">
                     <div className="submenu-voegol-card-img flex">
                         <img src="/grading.svg" alt="grading-icon" />
