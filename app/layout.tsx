@@ -5,8 +5,8 @@ import OutlinedBtn from '@/components/outlined-btn'
 import FilledBtn from '@/components/filled-btn'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBell } from '@fortawesome/free-regular-svg-icons'
-import ServicesNavbarCard from './_components/services-navbar-card'
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import InfoSubmenu from './_components/info-submenu'
 
 export const metadata = {
   title: 'Gol copycat',
@@ -28,6 +28,7 @@ function RootLayout() {
                     <FontAwesomeIcon icon={faBell} />
                 </div>
             </header>
+        
           </div>
         </body>
       </html>

@@ -11,7 +11,7 @@ const ServicesNavbarCard = () => {
         <div className="grid grid-cols-6 gap-3">
             {/*MARK: COLUNA 1*/}
             <div className="col-span-1">
-                <div className="submenu-voegol-card bg-white rounded-[1vw] h-[248px] p-[20px] flex flex-col justify-between ">
+                <div className="submenu-voegol-card bg-white rounded-[1vw] h-[248px] p-[20px] flex flex-col justify-between cursor-pointer">
                     <div className="submenu-voegol-card-img flex">
                         <img src="/bagagem.svg" alt="bagagem-icon" />
                     </div>
@@ -25,7 +25,7 @@ const ServicesNavbarCard = () => {
 
             {/*MARK: COLUNA 2*/}
             <div className="col-span-1">
-                <div className="submenu-voegol-card bg-white rounded-[1vw] h-full p-[20px] flex  flex-col justify-between">
+                <div className="submenu-voegol-card bg-white rounded-[1vw] h-full p-[20px] flex  flex-col justify-between cursor-pointer">
                     <div className="submenu-voegol-card-img flex">
                         <img src="/event-seat.svg" alt="bagagem-icon" />
                     </div>
@@ -38,7 +38,7 @@ const ServicesNavbarCard = () => {
             
             {/*MARK: COLUNA 3*/}
             <div className="col-span-1 grid grid-rows-2 gap-3 ">
-                <div className="submenu-voegol-card bg-white rounded-[1vw] h-full p-[20px] flex  flex-col justify-between">
+                <div className="submenu-voegol-card bg-white rounded-[1vw] h-full p-[20px] flex  flex-col justify-between cursor-pointer">
                     <div className="submenu-voegol-card-img flex">
                         <img src="/more-info.svg" alt="bagagem-icon" />
                     </div>
@@ -48,7 +48,7 @@ const ServicesNavbarCard = () => {
                     </div>
                 </div>
 
-                <div className="submenu-voegol-card bg-white rounded-[1vw] h-full  p-[20px] flex  flex-col justify-between">
+                <div className="submenu-voegol-card bg-white rounded-[1vw] h-full  p-[20px] flex  flex-col justify-between cursor-pointer">
                     <div className="submenu-voegol-card-img flex">
                         <img src="/credit-card.svg" alt="credit-card-icon" />
                     </div>
@@ -61,7 +61,7 @@ const ServicesNavbarCard = () => {
             
             {/*MARK: COLUNA 4*/}
             <div className="col-span-1 grid grid-rows-2 gap-3">
-                <div className="submenu-voegol-card bg-white rounded-[1vw] h-full p-[20px] flex  flex-col justify-between">
+                <div className="submenu-voegol-card bg-white rounded-[1vw] h-full p-[20px] flex  flex-col justify-between cursor-pointer">
                     <div className="submenu-voegol-card-img flex">
                         <img src="/escalator-warning.svg" alt="escalator-icon" />
                     </div>
@@ -71,7 +71,7 @@ const ServicesNavbarCard = () => {
                     </div>  
                 </div>
 
-                <div className="submenu-voegol-card bg-white rounded-[1vw] h-full p-[20px] flex  flex-col justify-between">
+                <div className="submenu-voegol-card bg-white rounded-[1vw] h-full p-[20px] flex  flex-col justify-between cursor-pointer">
                     <div className="submenu-voegol-card-img flex">
                         <img src="/airline-seat-recline-normal.svg" alt="airline-seat-icon" />
                     </div>
@@ -84,7 +84,7 @@ const ServicesNavbarCard = () => {
             
             {/*MARK: COLUNA 5*/}
             <div className="col-span-1 grid grid-rows-2 gap-3 ">
-                <div className="submenu-voegol-card bg-white rounded-[1vw] h-full p-[20px] flex  flex-col justify-between">
+                <div className="submenu-voegol-card bg-white rounded-[1vw] h-full p-[20px] flex  flex-col justify-between cursor-pointer">
                     <div className="submenu-voegol-card-img flex">
                         <img src="/badge.png" alt="badge-icon" />
                     </div>
@@ -94,7 +94,7 @@ const ServicesNavbarCard = () => {
                     </div>  
                 </div>
 
-                <div className="submenu-voegol-card bg-white rounded-[1vw] h-full p-[20px] flex  flex-col justify-between">
+                <div className="submenu-voegol-card bg-white rounded-[1vw] h-full p-[20px] flex  flex-col justify-between cursor-pointer">
                     <div className="submenu-voegol-card-img flex">
                         <img src="/pets.svg" alt="pet-icon" />
                     </div>
@@ -107,7 +107,7 @@ const ServicesNavbarCard = () => {
 
             {/*MARK: COLUNA 6*/}
             <div className="col-span-1 grid grid-rows-2 gap-3 ">
-                <div className="submenu-voegol-card bg-white rounded-[1vw] h-full p-[20px] flex  flex-col justify-between">
+                <div className="submenu-voegol-card bg-white rounded-[1vw] h-full p-[20px] flex  flex-col justify-between cursor-pointer">
                     <div className="submenu-voegol-card-img flex">
                         <img src="/smart-display.svg" alt="smart-display-icon" />
                     </div>
@@ -117,7 +117,7 @@ const ServicesNavbarCard = () => {
                     </div>  
                 </div>
 
-                <div className="submenu-voegol-card bg-white rounded-[1vw] h-full p-[20px] flex  flex-col justify-between">
+                <div className="submenu-voegol-card bg-white rounded-[1vw] h-full p-[20px] flex  flex-col justify-between cursor-pointer">
                     <div className="submenu-voegol-card-img flex">
                         <img src="/plus.svg" alt="plus-icon" />
                     </div>
